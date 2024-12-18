@@ -1,6 +1,13 @@
 # JavaQuizProject
+A user can create a new session with a new user ID. This initiates the start of a session.
+By using the API's user can get a question. Users have to answer the current question before moving forward to the next question.
+Users can get the final result using the result API.
+All the errors have been countered using the ErrorHandling class.
+H2 Database is and questions along with answers are hardcoded.
+
+# API's
  Here are the API's
- This API is used to create a user session. All the details regarding several question answer correct and incorrect answers are inside it.
+ This API is used to create a user session. All the details regarding several questions answer correct and incorrect answers are inside it.
  [POST](http://localhost:8080) /quiz/start?userId=12345
 
  This API is used to get the question. Key component if earlier there is question not answered then it will give an error also without a session you can't get a question.
